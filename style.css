@@ -41,12 +41,26 @@ a{
     display: flex;
     flex-direction: column;
     background-color: white;
+    animation: fromBelow 0.5s ease-in-out;
+    
+}
+@keyframes fromBelow {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 .main__hero__image{
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     width: 23.5rem;
+    
+    
 }
 
 .main__container{
@@ -56,6 +70,7 @@ a{
     justify-content: space-evenly;
     height: 9rem;
     margin-top: 1.4rem;
+    
 }
 
 .main__container__title{
